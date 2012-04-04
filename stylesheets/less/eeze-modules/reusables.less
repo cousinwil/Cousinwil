@@ -1,0 +1,51 @@
+/* reusables.less - reusable classes.
+  --------------------------------------------------------------------------- */
+.offset {
+  display: none;
+}
+.ellipsis {
+ -o-text-overflow: ellipsis;
+ overflow: hidden; 
+ text-overflow: ellipsis; 
+ text-wrap: none; 
+ white-space: nowrap; 
+ word-wrap: none;
+}
+.link { 
+  cursor: pointer;
+}
+.underline {
+  text-decoration: underline;
+}
+small, .small {
+  font-size: .8em;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
