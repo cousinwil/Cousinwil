@@ -1,2 +1,103 @@
 /* application.less - Base Global CSS
   --------------------------------------------------------------------------- */
+body {
+  background-image: url(../images/bg-bamboo.jpg);
+  font-family: 'Geneva','Arial',Sans-Serif;
+  font-size: 14px;
+  color: @black;
+}
+nav h1 {
+  margin: 2px 0 0 80px;
+  font-size: 40px;
+  color: @white;
+}
+nav {
+  position: fixed;
+  background-color: @black;
+  border-bottom: @border;
+  .shadow();
+  z-index: 900;
+  height: 48px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.cousinwil-logo {
+  background-image: url(../images/cousinwil-80.png);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 901;
+  top: -4px;
+  display: block;
+}
+.nav {
+  float: right;
+  color: @white;
+  margin-top: 16px;
+}
+.nav a {
+  color: @gold;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: @red;  
+}
+.first-container {
+  padding-top: 60px;
+}
+.header {
+  font-family: @header;
+  font-size: 34px;
+  line-height: 1.6;
+}
+.header em {
+  text-transform: none;
+  font-weight: bold;
+}
+.inline {
+  display: inline-block;
+}
+.centered {
+  margin: 0 auto;
+}
+.left-list {
+  float: left;
+  margin-right: 8px;
+}
+.left-list.last {
+  margin-right: 0;
+}
+.elevencol.centered {
+  margin: 0 5%;
+  width: 90%;	
+}
+.tencol.centered {
+  margin: 0 9.5%;
+  width: 81%;	
+}
+.elevencol.centered.shell {
+  margin: 0 5% 0 4.4%;
+}
+article {
+  padding: 40px 0 35px;
+  border-bottom: 3px dashed @white;
+}
+article.final {
+	border-bottom: none;
+}
+.marquee-image {
+	border: @border;
+	.rounded(2px);
+}
+.vert-border {
+	border-top: @border;
+	border-bottom: @border;
+	.shadow();
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.relative {
+	position: relative;
+}

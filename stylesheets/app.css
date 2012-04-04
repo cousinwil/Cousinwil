@@ -1,21 +1,176 @@
 /* app.less - The non-eeze based css generator for the application's CSS! 
   --------------------------------------------------------------------------- */
-/* css3.less - CSS3 mixings for faster coding - just pass the declaration once 
-         and it executes the browser specific prefixes also.
+/* css3.less - CSS3 mix-ins for faster coding. Just pass the declaration once 
+         and it executes the browser specific prefixes also...
+
+         .test {
+           .round(8px);
+         }
+
+         ...gives you:
+
+         .test {
+           -moz-border-radius: 8px;
+           -webkit-border-radius: 8px;
+           border-radius: 8px;
+         }
   --------------------------------------------------------------------------- */
 /* variables.less - makes writing and updating CSS much fasterby allowing you
        to set global colors, fonts, etc.
   --------------------------------------------------------------------------- */
 /* typography.less - typography, reusable color classes
   --------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Averia Serif Libre', cursive;
+  font-weight: bolder;
+  margin: 0;
+}
+p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.white {
+  color: #fefefe;
+}
+.red {
+  color: #f41526;
+}
+.black {
+  color: #120e00;
+}
+.gold {
+  color: #dec188;
+}
+.bg-white {
+  background-color: #fefefe;
+}
+.bg-red {
+  background-color: #f41526;
+}
+.bg-black {
+  background-color: #120e00;
+}
+.bg-gold {
+  background-color: #dec188;
+}
 /* buttons.less - set your button styles
    ------------------------------------------------------------------------- */
 /* application.less - Base Global CSS
   --------------------------------------------------------------------------- */
+body {
+  background-image: url(../images/bg-bamboo.jpg);
+  font-family: 'Geneva', 'Arial', Sans-Serif;
+  font-size: 14px;
+  color: #120e00;
+}
+nav h1 {
+  margin: 2px 0 0 80px;
+  font-size: 40px;
+  color: #fefefe;
+}
+nav {
+  position: fixed;
+  background-color: #120e00;
+  border-bottom: 8px solid #fefefe;
+  -moz-box-shadow: 0 0 2px 1px #888888;
+  -webkit-box-shadow: 0 0 2px 1px #888888;
+  box-shadow: 0 0 2px 1px #888888;
+  z-index: 900;
+  height: 48px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.cousinwil-logo {
+  background-image: url(../images/cousinwil-80.png);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 901;
+  top: -4px;
+  display: block;
+}
+.nav {
+  float: right;
+  color: #fefefe;
+  margin-top: 16px;
+}
+.nav a {
+  color: #dec188;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #f41526;
+}
+.first-container {
+  padding-top: 60px;
+}
+.header {
+  font-family: 'Miniver', cursive;
+  font-size: 34px;
+  line-height: 1.6;
+}
+.header em {
+  text-transform: none;
+  font-weight: bold;
+}
+.inline {
+  display: inline-block;
+}
+.centered {
+  margin: 0 auto;
+}
+.left-list {
+  float: left;
+  margin-right: 8px;
+}
+.left-list.last {
+  margin-right: 0;
+}
+.elevencol.centered {
+  margin: 0 5%;
+  width: 90%;
+}
+.tencol.centered {
+  margin: 0 9.5%;
+  width: 81%;
+}
+.elevencol.centered.shell {
+  margin: 0 5% 0 4.4%;
+}
+article {
+  padding: 40px 0 35px;
+  border-bottom: 3px dashed #fefefe;
+}
+.marquee-image {
+  border: 8px solid #fefefe;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.vert-border {
+  border-top: 8px solid #fefefe;
+  border-bottom: 8px solid #fefefe;
+  -moz-box-shadow: 0 0 2px 1px #888888;
+  -webkit-box-shadow: 0 0 2px 1px #888888;
+  box-shadow: 0 0 2px 1px #888888;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.relative {
+  position: relative;
+}
 /* media-queries.less - Media Queries for size-specific layouts 
   --------------------------------------------------------------------------- */
 @media only screen and (min-width: 1024px) {
-  
+  /* responsive-full.less - Responsive CSS for Laptops and Desktops
+    --------------------------------------------------------------------------- */
 }
 @media only screen and (max-width: 1023px) {
   
