@@ -47,12 +47,14 @@ nav {
 }
 .first-container {
   padding-top: 60px;
+  height: 230px;
 }
 .header {
   font-family: @header;
   font-size: 34px;
   line-height: 1.6;
   font-weight: bold;
+  margin-bottom: 42px;
 }
 .header em {
   text-transform: none;
@@ -99,9 +101,11 @@ article.final {
 .vert-border {
 	border-top: @border;
 	border-bottom: @border;
-	.shadow();
+  .shadow();
 	padding-top: 20px;
 	padding-bottom: 20px;
+	position: relative;
+	z-index: 20;
 }
 .relative {
 	position: relative;

@@ -121,12 +121,14 @@ nav {
 }
 .first-container {
   padding-top: 60px;
+  height: 230px;
 }
 .header {
   font-family: 'Miniver', cursive;
   font-size: 34px;
   line-height: 1.6;
   font-weight: bold;
+  margin-bottom: 42px;
 }
 .header em {
   text-transform: none;
@@ -180,6 +182,8 @@ article.final {
   box-shadow: 0 0 2px 1px #888888;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+  z-index: 20;
 }
 .relative {
   position: relative;
@@ -197,6 +201,9 @@ article.final {
 @media only screen and (min-width: 1024px) {
   /* responsive-full.less - Responsive CSS for Laptops and Desktops
     --------------------------------------------------------------------------- */
+  nav .fivecol {
+    margin-left: -30px;
+  }
 }
 @media only screen and (max-width: 1023px) {
   
