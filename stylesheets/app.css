@@ -34,6 +34,12 @@ p {
   font-size: 16px;
   line-height: 1.4;
 }
+a {
+  font-weight: bold;
+}
+a:hover {
+  color: #dec188;
+}
 .white {
   color: #fefefe;
 }
@@ -92,8 +98,13 @@ nav {
   height: 80px;
   position: absolute;
   z-index: 901;
-  top: -4px;
+  top: -2px;
   display: block;
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 .nav {
   float: right;
@@ -115,10 +126,11 @@ nav {
   font-family: 'Miniver', cursive;
   font-size: 34px;
   line-height: 1.6;
+  font-weight: bold;
 }
 .header em {
   text-transform: none;
-  font-weight: bold;
+  color: #f41526;
 }
 .inline {
   display: inline-block;
@@ -129,6 +141,9 @@ nav {
 .left-list {
   float: left;
   margin-right: 8px;
+}
+.facebook {
+  margin-left: 18px;
 }
 .left-list.last {
   margin-right: 0;
@@ -145,8 +160,11 @@ nav {
   margin: 0 5% 0 4.4%;
 }
 article {
-  padding: 40px 0 35px;
+  padding: 50px 0;
   border-bottom: 3px dashed #fefefe;
+}
+article.final {
+  border-bottom: none;
 }
 .marquee-image {
   border: 8px solid #fefefe;
@@ -165,6 +183,14 @@ article {
 }
 .relative {
   position: relative;
+}
+.quote {
+  margin: 16px 5% 0;
+  display: block;
+  width: 90%;
+}
+.second-row {
+  margin-top: 15px;
 }
 /* media-queries.less - Media Queries for size-specific layouts 
   --------------------------------------------------------------------------- */
