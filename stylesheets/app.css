@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Averia Serif Libre', cursive;
+  font-family: 'Averia Serif Libre', Arial, sans-serif;
   font-weight: bolder;
   margin: 0;
 }
@@ -109,7 +109,7 @@ nav {
 .nav {
   float: right;
   color: #fefefe;
-  padding: 4px 0 0;
+  padding: 0;
   width: 550px;
 }
 .nav a {
@@ -125,7 +125,7 @@ nav {
   min-height: 230px;
 }
 .header {
-  font-family: 'Miniver', cursive;
+  font-family: 'Miniver', Georgia, cursive;
   font-size: 34px;
   line-height: 1.6;
   font-weight: bold;
@@ -144,6 +144,7 @@ nav {
 .left-list {
   float: left;
   margin-right: 8px;
+  line-height: 20px;
 }
 .facebook {
   margin-left: 18px;
@@ -217,11 +218,8 @@ article.final {
     padding-top: 16px;
     margin-top: -1px;
   }
-  .first-container {
-    padding-top: 100px;
-  }
 }
-@media handheld, only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   /* responsive-mobile.less - Responsive CSS for Mobile Devices
     --------------------------------------------------------------------------- */
   nav {
@@ -239,5 +237,11 @@ article.final {
   }
   .second-row {
     margin: 0;
+  }
+  .header {
+    font-size: 26px;
+  }
+  .first-container {
+    padding-top: 100px;
   }
 }
