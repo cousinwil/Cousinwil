@@ -109,7 +109,8 @@ nav {
 .nav {
   float: right;
   color: #fefefe;
-  margin-top: 16px;
+  padding: 4px 0 0;
+  width: 550px;
 }
 .nav a {
   color: #dec188;
@@ -121,7 +122,7 @@ nav {
 }
 .first-container {
   padding-top: 60px;
-  height: 230px;
+  min-height: 230px;
 }
 .header {
   font-family: 'Miniver', cursive;
@@ -189,7 +190,7 @@ article.final {
   position: relative;
 }
 .quote {
-  margin: 16px 5% 0;
+  margin: 18px 5% 0;
   display: block;
   width: 90%;
 }
@@ -198,16 +199,45 @@ article.final {
 }
 /* media-queries.less - Media Queries for size-specific layouts 
   --------------------------------------------------------------------------- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1028px) {
   /* responsive-full.less - Responsive CSS for Laptops and Desktops
     --------------------------------------------------------------------------- */
   nav .fivecol {
     margin-left: -30px;
   }
 }
-@media only screen and (max-width: 1023px) {
-  
+@media only screen and (max-width: 1027px) {
+  /* responsive-tablet.less - Responsive CSS for Small Laptops and Tablets
+    --------------------------------------------------------------------------- */
+  nav h1 {
+    margin-top: 14px;
+  }
+  .nav {
+    float: none;
+    padding-top: 16px;
+    margin-top: -1px;
+  }
+  .first-container {
+    padding-top: 100px;
+  }
 }
 @media handheld, only screen and (max-width: 767px) {
-  
+  /* responsive-mobile.less - Responsive CSS for Mobile Devices
+    --------------------------------------------------------------------------- */
+  nav {
+    height: 80px;
+  }
+  .nav {
+    margin: 0 0 0 82px;
+    padding: 4px 0 0;
+  }
+  .row {
+    width: 95%;
+  }
+  .marquee-image {
+    margin-bottom: 14px;
+  }
+  .second-row {
+    margin: 0;
+  }
 }
