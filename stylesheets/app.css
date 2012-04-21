@@ -215,8 +215,8 @@ article.final {
   }
   .nav {
     float: none;
-    padding-top: 16px;
-    margin-top: -1px;
+    padding-top: 15px;
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 767px) {
